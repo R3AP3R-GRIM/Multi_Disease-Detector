@@ -1,1 +1,0 @@
-# Multi_Disease-Detector
