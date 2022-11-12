@@ -71,9 +71,9 @@ if (selected == 'Heart Disease Prediction'):
         heart_prediction = heart_disease_model.predict([[age, sex, cp, trestbps, chol, fbs, restecg,thalach,exang,oldpeak,slope,ca,thal]])                          
         
         if (heart_prediction[0] == 1):
-          heart_diagnosis = 'The person may having heart disease'
+          heart_diagnosis = 'The person might be having heart disease'
         else:
-          heart_diagnosis = 'The person probably doesnt have any heart disease'
+          heart_diagnosis = 'The person probably doesnt have heart disease'
         
     st.success(heart_diagnosis)
         
@@ -160,7 +160,7 @@ if (selected == "Parkinsons Prediction"):
         parkinsons_prediction = parkinsons_model.predict([[fo, fhi, flo, Jitter_percent, Jitter_Abs, RAP, PPQ,DDP,Shimmer,Shimmer_dB,APQ3,APQ5,APQ,DDA,NHR,HNR,RPDE,DFA,spread1,spread2,D2,PPE]])                          
         
         if (parkinsons_prediction[0] == 1):
-          parkinsons_diagnosis = "The person has Parkinson's disease"
+          parkinsons_diagnosis = "The person might have Parkinson's disease"
         else:
           parkinsons_diagnosis = "The person does not have Parkinson's disease"
         
